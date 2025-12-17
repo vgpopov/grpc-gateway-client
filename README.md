@@ -9,28 +9,29 @@ The `grpc-gateway-client` is a high quality REST client generator for [gRPC](htt
 - Supports all grpc-gateway features including custom query parameters, and request body.
 - Battle tested by [Akuity's](https://akuity.io/) production services.
 
-
 ## Usage
 
 1. Install `grpc-gateway-client`:
 
-    ```bash
-    $ go install github.com/akuity/grpc-gateway-client/protoc-gen-grpc-gateway-client@latest
-    ```
+   ```bash
+   $ go install github.com/vgpopov/grpc-gateway-client/protoc-gen-grpc-gateway-client@latest
+   ```
+
 1. Add plugin in your buf.gen.yaml:
 
-    ```yaml
-    version: v1
-    managed:
-    enabled: true
+   ```yaml
+   version: v1
+   managed:
+   enabled: true
 
-    plugins:
-      - name: gateway-client
-        path: protoc-gen-grpc-gateway-client
-        out: pkg/api/gen
-        opt:
-          - paths=source_relative
-    ```
+   plugins:
+     - name: gateway-client
+       path: protoc-gen-grpc-gateway-client
+       out: pkg/api/gen
+       opt:
+         - paths=source_relative
+   ```
+
 1. Generate client using `buf generate` and use it in your code:
 
    ```go
@@ -40,6 +41,6 @@ The `grpc-gateway-client` is a high quality REST client generator for [gRPC](htt
         panic(err)
     }
     fmt.Println(resp.Message)
-    ```
+   ```
 
 See [example](./example/README.md) for a complete example.
