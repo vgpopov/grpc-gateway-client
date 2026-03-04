@@ -14,9 +14,9 @@ import (
 	"google.golang.org/grpc/credentials/insecure"
 	"google.golang.org/grpc/test/bufconn"
 
-	"github.com/vgpopov/grpc-gateway-client/internal/test/gen/testv1"
-	"github.com/vgpopov/grpc-gateway-client/internal/test/server"
-	"github.com/vgpopov/grpc-gateway-client/pkg/grpc/gateway"
+	"github.com/akuity/grpc-gateway-client/internal/test/gen/testv1"
+	"github.com/akuity/grpc-gateway-clientinternal/test/server"
+	"github.com/akuity/grpc-gateway-clientpkg/grpc/gateway"
 )
 
 type ClientTestSuite struct {

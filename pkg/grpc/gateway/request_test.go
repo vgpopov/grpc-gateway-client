@@ -22,10 +22,10 @@ import (
 	"google.golang.org/protobuf/proto"
 	"gopkg.in/yaml.v3"
 
-	"github.com/vgpopov/grpc-gateway-client/internal/assets"
-	"github.com/vgpopov/grpc-gateway-client/internal/test/gen/testv1"
-	"github.com/vgpopov/grpc-gateway-client/internal/test/server"
-	"github.com/vgpopov/grpc-gateway-client/pkg/grpc/gateway"
+	"github.com/akuity/grpc-gateway-client/internal/assets"
+	"github.com/akuity/grpc-gateway-clientinternal/test/gen/testv1"
+	"github.com/akuity/grpc-gateway-clientinternal/test/server"
+	"github.com/akuity/grpc-gateway-clientpkg/grpc/gateway"
 
 	_ "embed"
 )
