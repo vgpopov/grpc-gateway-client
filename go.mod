@@ -1,4 +1,4 @@
-module github.com/vgpopov/grpc-gateway-client
+module github.com/akuity/grpc-gateway-client
 
 go 1.21
 
