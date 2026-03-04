@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/vgpopov/grpc-gateway-client/pkg/grpc/gateway"
+	"github.com/akuity/grpc-gateway-client/pkg/grpc/gateway"
 
-	grpc_gateway_client_example "github.com/vgpopov/grpc-gateway-client-example/pkg/api/gen"
+	grpc_gateway_client_example "github.com/akuity/grpc-gateway-client-example/pkg/api/gen"
 )
 
 func main() {

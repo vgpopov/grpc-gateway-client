@@ -6,11 +6,11 @@ import (
 	"encoding/base64"
 	"time"
 
+	"github.com/bufbuild/protoyaml-go"
 	"google.golang.org/genproto/googleapis/api/httpbody"
-	"gopkg.in/yaml.v3"
 
-	"github.com/vgpopov/grpc-gateway-client/internal/assets"
-	"github.com/vgpopov/grpc-gateway-client/internal/test/gen/testv1"
+	"github.com/akuity/grpc-gateway-client/internal/assets"
+	"github.com/akuity/grpc-gateway-client/internal/test/gen/testv1"
 
 	_ "embed"
 )
@@ -65,7 +65,7 @@ func (s *testServiceServer) DownloadInvitations(req *testv1.DownloadInvitationsR
 	}
 	for _, invitation := range invitations {
 		var buf bytes.Buffer
-		data, err := yaml.Marshal(invitation)
+		data, err := protoyaml.Marshal(invitation)
 		if err != nil {
 			return err
 		}
